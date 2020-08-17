@@ -7,3 +7,4 @@ def bacon():
     eggs = 0
 
 spam()
+bacon()
