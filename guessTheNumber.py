@@ -1,6 +1,7 @@
 import random
-secretNumber =
-random.randint(1, 20)
+
+secretNumber = random.randint(1, 20)
+
 print('I am thinking of a number between 1 and 20')
 
 #Ask the the player to guess 6 times.
@@ -18,4 +19,4 @@ for guessesTaken in range(1, 7):
             break    #This condition is the correct guess!
 
     if guess == secretNumber:
-        print('Good job! You guessed my number in ' + str(guessesTaken +' guesses!'))
+        print('Good job! You guessed my number in ' +str(guessesTaken) +' guesses!')
