@@ -5,6 +5,6 @@ def spam():
 def bacon():
     ham = 101
     eggs = 0
-
+    print(ham)
 spam()
 bacon()
