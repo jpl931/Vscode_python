@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 
 root =Tk()
-root.title("My Message Box")
+root.title("My Message Box Examples")
 root.geometry("300x300")
 
 w = Label(root, text ='Geeks for Geeks', font = "50")
