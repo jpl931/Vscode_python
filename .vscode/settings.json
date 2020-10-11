@@ -1,6 +1,6 @@
 {
     "python.linting.pylintEnabled": false,
-    "python.pythonPath": "/home/jpl931/Desktop/Vscode_python/Vscode_python/.venv/bin/python3",
+    "python.pythonPath": ".venv/bin/python",
     "python.linting.flake8Enabled": false,
     "python.linting.enabled": true
 }
