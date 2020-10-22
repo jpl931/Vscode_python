@@ -9,7 +9,7 @@ lat = "38.627003"
 
 lon = "-90.199402"
 
-url ="https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&appid=%s&units=metric" % (lat, lon, api_key)
+url ="https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&appid=%s&units=imperial" % (lat, lon, api_key)
 
 
 response =requests.get(url)
