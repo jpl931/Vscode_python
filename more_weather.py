@@ -18,7 +18,8 @@ response =requests.get(url)
 data =json.loads(response.text)
 
 print(data)
-print(data['weather'])
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(data)
 
 
 
