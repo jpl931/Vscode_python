@@ -1,3 +1,3 @@
-from Tkinter import *
+from tkinter import *
 root=Tk()
 root.mainloop()
