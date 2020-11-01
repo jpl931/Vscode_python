@@ -4,13 +4,13 @@ api_key = "518024a766d32327acf4b49f5e47e52f"
 base_url = "https://api.openweathermap.org/data/2.5/weather?"
 
 
-city_name = input("Enter the city bane: ")
+city_name = input("Enter the city name: ")
 
 complete_url = base_url + "appid" + api_key + "&q=" +city_name
 
 response = requests.get(complete_url)
 
-x = response.json
+x = response.json()
 
 "404 error message"
 if x["cod"] != "404" :
@@ -22,7 +22,7 @@ if x["cod"] != "404" :
 
     current_humidity = y["humidity"]
 
-    z = x["wearher"]
+    z = x["weather"]
 
     weather_description = z[0]["description"]
 
