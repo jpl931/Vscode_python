@@ -14,7 +14,8 @@ x = response.json()
 
 "404 error message"
 if x["cod"] != "404" :
-    y = x['main']
+    
+    y = x["main"]
 
     current_temperature = y["temp"]
 
