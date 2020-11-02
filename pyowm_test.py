@@ -1,6 +1,6 @@
 import pyowm
 from pyowm import timeutils
-from api_key import api_key
+from api_key import API_KEY
 
 degree_sign = u'\N{DEGREE SIGN}'
 
