@@ -16,7 +16,7 @@ messagebox.showerror("showerror", "Error")
 
 messagebox.askquestion("askquestion", "Are you sure?")
 
-messagebox.askokcancel("askofcancel", "Want to continue?")
+messagebox.askokcancel("askokcancel", "Want to continue?")
 
 messagebox.askyesno("askyesno", "Find the value?")
 
