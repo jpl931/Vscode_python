@@ -12,6 +12,8 @@ response = requests.get(complete_url)
 
 x = response.json()
 
+print(x)
+
 "404 error message"
 if x["cod"] != "404" :
     
