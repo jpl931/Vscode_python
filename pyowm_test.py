@@ -14,6 +14,6 @@ weather = forecaster.get_weather_at(time)
 
 temperature = weather.get_temparature(unit='fahrenheit')['temp']
 
-print('The temperature at ' + time.strftime('%Y-%m-%d %H:%M:%S') + is + str(temperature) + degree_sign + 'F')
+print('The temperature at ' + time.strftime('%Y-%m-%d %H:%M:%S') + ' is ' + str(temperature) + degree_sign + 'F')
 
 
