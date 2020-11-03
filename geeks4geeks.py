@@ -8,17 +8,17 @@ root.geometry("300x300")
 w = Label(root, text ='Geeks for Geeks', font = "50")
 w.pack()
 
-messagebox.showinfo("showinfo", "Information")
+messagebox.showinfo("show_info", "Information")
 
-messagebox.showwarning("showwarning", "Warning")
+messagebox.showwarning("show_warning", "Warning")
 
-messagebox.showerror("showerror", "Error")
+messagebox.showerror("show_error", "Error")
 
-messagebox.askquestion("askquestion", "Are you sure?")
+messagebox.askquestion("ask_question", "Are you sure?")
 
-messagebox.askokcancel("askokcancel", "Want to continue?")
+messagebox.askokcancel("ask_ok_cancel", "Want to continue?")
 
-messagebox.askyesno("askyesno", "Find the value?")
+messagebox.askyesno("ask_yes_no", "Find the value?")
 
 messagebox.askretrycancel("askretrycancel", "Try again?")
 
