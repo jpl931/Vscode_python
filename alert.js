@@ -5,7 +5,7 @@
     <body>
 
         <script>
-            alert("I'm Javascript!")
+            alert("I'm Javascript!");
         </script>
     </body>
 </html>
