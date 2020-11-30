@@ -1,5 +1,5 @@
 import datetime
-a = datetime.dtetime.now()
+a = datetime.datetime.now()
 print(a)
 
 
