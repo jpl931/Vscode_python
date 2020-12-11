@@ -26,4 +26,4 @@ if x["cod"] != "404":
 
     weather_description = z[0] ["description"]
 
-    print(" Temperature (in Kelvin unit) = " + str(current_temperature + "\n atmospheric pressure ")
+    print(" Temperature (in Kelvin unit) = " + str(current_temperature + "\n atmospheric pressure (in hPa unit) = +")
