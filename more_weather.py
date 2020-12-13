@@ -6,7 +6,7 @@ import sys
 
 api_key = "518024a766d32327acf4b49f5e47e52f"
 
-#where"
+#where
 
 lat = "38.627003"
 
