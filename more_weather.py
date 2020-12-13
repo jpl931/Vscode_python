@@ -15,7 +15,7 @@ url ="https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&appid=%s&uni
 
 response =requests.get(url)
 
-data =json.loads(response.text)
+data = json.loads(response.text)
 
 print(data)
 pp = pprint.PrettyPrinter(indent=5)
