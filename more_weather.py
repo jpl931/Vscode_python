@@ -19,7 +19,7 @@ response =requests.get(url)
 
 data = json.loads(response.text)
 
-print(data)
+#print(data)
 pp = pprint.PrettyPrinter(indent=7)
 pp.pprint(data)
 
