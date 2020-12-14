@@ -11,12 +11,6 @@ mgr = owm.weather_manager()
 
 w = observation.weather
 
-w.detailed_status
-w.wind
-w.temperature(celcius)
-w.rain
-w.heat_index
-w.clouds
 
 #Foreczst Lomdon
 forecast = mgr.forecast_at_place('London,GB', 'daily')
