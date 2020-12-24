@@ -4,9 +4,9 @@ import pyowm
 def open_weather_map(event):
     owm = pyowm.OWM('518024a766d32327acf4b49f5e47e52f')
     city_name = entry1.get()
-    observation = owm.weather_at_place('Los Angeles, US')
+    observation = owm.weather_at_place('London, UK')
     w = observation.get_weather()
-    temp = w.get_temperature(unit = 'imperial')
+    temp = w.get_temperature(unit = 'celcius')
     label1['temp'] = temp
 
 window = Tk()
