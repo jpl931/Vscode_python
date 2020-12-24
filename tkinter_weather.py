@@ -22,7 +22,7 @@ button1.pack()
 label1 = Label(window, font = ('Arial' , 20, 'bold'))
 label1.pack()
 
-button1.bind("<Button1>", open_weather_map)
+button1.Button(window, text = 'Submit'), font = ('Arial', 16), command=Open_weather_map)
 window.main.loop()
 
 
