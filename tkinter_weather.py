@@ -10,7 +10,7 @@ def open_weather_map(event):
     label1['temp'] = temp
 
 window = Tk()
-window.geometry('400x500')
+window.geometry('300x300')
 window.title('Weather')
 
 entry1 = Entry(window, width = 25, font = ('Arial' ,16))

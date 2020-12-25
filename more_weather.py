@@ -15,13 +15,14 @@ lon = "-90.199402"
 url ="https://api.openweathermap.org/data/2.5/onecall?lat=%s&lon=%s&appid=%s&units=imperial" % (lat, lon, api_key)
 
 
-response =requests.get(url)
+response = requests.get(url)
 
 data = json.loads(response.text)
 
 #print(data)
 pp = pprint.PrettyPrinter(indent=7)
-pp.pprint(data)
+
+pprint(response.json())
 
 
 
