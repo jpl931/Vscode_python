@@ -18,7 +18,7 @@ def get_weather(city, units):
     pressure = main['pressure']
 
     with open('weather.txt', 'w') as f:
-        f.write(str(today) + '\n' + "Current Temperature: ")
-            + str(temp) + '\n' + "Max Temperature: " +
-            str(temp_max) + '\n' + "Minimum Temperature: " + str(temp_min)
-            + '\n' + "Humidity: " +str(humidity) + "%" + '\n')
+        f.write(str(today) + '\n' + "Current Temperature: ") + str(temp) + '\n' + "Max Temperature: "  + str(temp_max) + '\n' + "Minimum Temperature: " + str(temp_min)  + '\n' + "Humidity: " + str(humidity) + "%" + '\n')
+            
+            
+            
