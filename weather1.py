@@ -9,4 +9,3 @@ json_data = requests.get(url).json()
 
 formatted_data = json_data['weather'][0]['description']
 print(formatted_data.capitalize())
-#test
