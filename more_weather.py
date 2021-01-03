@@ -19,19 +19,18 @@ response = requests.get(url)
 
 data = json.loads(response.text)
 
-#print(data)
-#pp = pprint.PrettyPrinter(indent=7)
+print(data)
+pp = pprint.PrettyPrinter(indent=7)
+pprint(response.json())
 
-#pprint(response.json())
-
-location = data['location']['name']
-
+#location = data['location']['name']
 
 
 
 
 
-print(f"Location: {location}")
+
+#print(f"Location: {location}")
 
 
 
