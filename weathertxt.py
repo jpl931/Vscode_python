@@ -4,7 +4,8 @@ from datetime import date
 
 def get_weather(city, units):
     today = date.today()
-    API_KEY = "518024a766d32327acf4b49f5e47e52f"
+    API_KEY = "api_address = 'http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=518024a766d32327acf4b49f5e47e52f&q='
+"
     URL =f'https://api.openweathermap.org/data/2.5/weather?zip=63048,us&appid={API_KEY}&units={units}'
 
 
@@ -17,8 +18,8 @@ def get_weather(city, units):
     humidity = main['humidity']
     pressure = main['pressure']
 
-    with open('weather.txt', 'w') as f:
-        f.write(str(today) + '\n' + "Current Temperature: " + str(temp) + '\n' + "Max Temperature: "  + str(temp_max) + '\n' + "Minimum Temperature: " + str(temp_min)  + '\n' + "Humidity: " + str(humidity) + "%" + '\n')
-            
-            
+
+
+
+
             
