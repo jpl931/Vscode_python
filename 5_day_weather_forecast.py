@@ -18,4 +18,12 @@ while running:
         try:
             print('\nThis app supports search by city(0) or by zip code(1).')
             search = int(input('Please input 0 or 1: '))
-            
+        except ValueError:
+            print("Sorry, I dont't get it.")
+        else:
+
+            #Passded the validation test
+            if search == 0:
+                city = input('Please input the city name:  ')
+                if city.lower() =='sf':
+                    city = 'San Francisco, US'
