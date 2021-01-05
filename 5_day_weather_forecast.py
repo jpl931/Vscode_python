@@ -3,7 +3,7 @@ import calendar
 
 
 api_key = '518024a766d32327acf4b49f5e47e52f'
-api_call = 'https;//api.openweathermap.org/data/2.5/forecast?appid=' + api_key
+api_call = 'https://api.openweathermap.org/data/2.5/forecast?appid=' + api_key
 
 running = True
 
@@ -51,7 +51,7 @@ while running:
         'country': json_data['city']['country']
     }
 
-    print('\n{city}, {country'.format(**location_data))
+    print('\n{city}, {country}'.format(**location_data))
 
     # the current date we are iterating through
     current_date = ''
@@ -68,9 +68,9 @@ while running:
         # Store current date and time
         if current_date != next_date:
             current_date = next_date
-            year, month, day = current_date.split(' ')
+            year, month, day = current_date.split('-')
             date = {'y': year, 'm': month, 'd': day}
-            print('\n{m}/{d}/{y}.format(**date')
+            print('\n{m}/{d}/{y}'.format(**date)
 
             # Grabs the first 2 integers from the hh:mm:ss to get the hours
             hour = int(hour[:2])
