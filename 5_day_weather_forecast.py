@@ -27,3 +27,65 @@ while running:
                 city = input('Please input the city name:  ')
                 if city.lower() =='sf':
                     city = 'San Francisco, US'
+
+
+                #Appends the to the API call
+                api_call += '&q=' + city
+                break
+
+            elif search == 1:
+                zip_code = input('Please input the zip code: ')
+#Appends the zip code to the api call
+                api_call += '&zip=' +zip_code
+                break
+
+            else: 
+                # Prints the invalid number (not 0 or 1)
+                print('{} is not a valid option.'. format(search))
+
+    json_data = requests.get(api_call).json()
+
+
+    location_data = {
+        'city': json_data['city']['name'],
+        'country': json_data['city']['country']
+    }
+
+    print('\n{city}, {country'.format(**location_data))
+
+    # the current date we are iterating through
+    current_date = ''
+
+    # Iterates thru the array of dictionaries named list in json_data
+    for item in json_data['list']:
+
+        # time weather data received placed in 3 hour blocks
+        time = item['dt_txt']
+
+        # Split the time into date and hour [2020-12-31 06:00:00]
+        next_date, hour = time.split(' ')
+
+        # Store current date and time
+        if current_date != next_date:
+            current_date = next_date
+            year, month, day = current_date.split(' ')
+            date = {'y': year, 'm': month, 'd': day}
+            print('\n{m}/{d}/{y}.format(**date')
+
+            # Grabs the first 2 integers from the hh:mm:ss to get the hours
+            hour = int(hour[:2])
+
+            # Sets the AM or PM period
+            if hour < 12:
+                if hour == 0:
+                    hour = 12
+                meridien = 'AM'
+            else:
+                if hour > 12:
+                    hour -= 12
+                meridien = 'PM'
+
+            # Prints the hours [HH:MM AM/PM]
+            print('\n%i:00 %s' % (hour, meridean))
+            
+
