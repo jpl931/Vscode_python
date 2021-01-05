@@ -86,6 +86,7 @@ while running:
                 meridien = 'PM'
 
             # Prints the hours [HH:MM AM/PM]
-            print('\n%i:00 %s' % (hour, meridean))
+            print('\n%i:00 %s' % (hour, meridien))
             
+
 
