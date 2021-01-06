@@ -100,22 +100,22 @@ while running:
             print('Fahrenheit: %.2f' % (temperature * 9/5 - 459.67))
 
         # prints a calendar of the month
-        calendar = calendar.month(int(year), int(month))
-        print('\n'+ calendar)
+    calendar = calendar.month(int(year), int(month))
+    print('\n'+ calendar)
 
         # Asks user if they want to exit
-        while True:
-            running = input("Anything else we can help you with? ")
-            if running.lower() == 'yes' or running.lower() == 'y':
-                print('GREAT!')
-                break
-            elif running.lower() == 'no' or running.lower() == 'n' or running == 'exit':
-                print('Thank you for using this here CL app 5 day forecast.')
-                print('Have a great day!')
-                running = False
-                break
-            else:
-                print('Sorry, I didn\'t get that.')
+    while True:
+        running = input("Anything else we can help you with? ")
+        if running.lower() == 'yes' or running.lower() == 'y':
+            print('GREAT!')
+            break
+        elif running.lower() == 'no' or running.lower() == 'n' or running == 'exit':
+            print('Thank you for using this here CL app 5 day forecast.')
+            print('Have a great day!')
+            running = False
+            break
+        else:
+            print('Sorry, I didn\'t get that.')
 
 
 
