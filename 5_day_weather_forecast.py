@@ -79,14 +79,14 @@ while running:
             if hour < 12:
                 if hour == 0:
                     hour = 12
-                meridien = 'AM'
+                meridiem = 'AM'
             else:
                 if hour > 12:
                     hour -= 12
-                meridien = 'PM'
+                meridiem = 'PM'
 
             # Prints the hours [HH:MM AM/PM]
-            print('\n%i:00 %s' % (hour, meridien))
+            print('\n%i:00 %s' % (hour, meridiem))
 
             # temperature in Kelvin
             temperature = item['main']['temp']
