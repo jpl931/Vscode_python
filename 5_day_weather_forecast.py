@@ -70,20 +70,20 @@ while running:
             current_date = next_date
             year, month, day = current_date.split('-')
             date = {'y': year, 'm': month, 'd': day}
-            print('\n{m}/{d}/{y}'.format(**date)
+            print('\n{m}/{d}/{y}'.format(**date))
 
             # Grabs the first 2 integers from the hh:mm:ss to get the hours
-            hour = int(hour[:2])
+        hour = int(hour[:2])
 
             # Sets the AM or PM period
-            if hour < 12:
-                if hour == 0:
-                    hour = 12
-                meridiem = 'AM'
-            else:
-                if hour > 12:
-                    hour -= 12
-                meridiem = 'PM'
+        if hour < 12:
+            if hour == 0:
+                hour = 12
+            meridiem = 'AM'
+        else:
+            if hour > 12:
+                hour -= 12
+            meridiem = 'PM'
 
             # Prints the hours [HH:MM AM/PM]
             print('\n%i:00 %s' % (hour, meridiem))
