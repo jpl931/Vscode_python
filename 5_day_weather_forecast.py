@@ -22,7 +22,7 @@ while running:
             print("Sorry, I dont't get it.")
         else:
 
-            #Passded the validation test
+            #Passed the validation test
             if search == 0:
                 city = input('Please input the city name:  ')
                 if city.lower() =='sf':
