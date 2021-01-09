@@ -10,3 +10,4 @@ b = 3 * 3
 print (a)
 print (b)
 print (a + b)
+print(a + a + b + b)
