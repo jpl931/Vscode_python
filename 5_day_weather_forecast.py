@@ -110,7 +110,7 @@ while running:
             print('GREAT!')
             break
         elif running.lower() == 'no' or running.lower() == 'n' or running == 'exit':
-            print('Thank you for using this here CLI app 5 day forecast.')
+            print('Thank you for using this CLI app 5 day forecast.')
             print('Have a great day!')
             running = False
             break
