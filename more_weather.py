@@ -20,7 +20,8 @@ response = requests.get(url)
 data = json.loads(response.text)
 
 print(data)
-pp = pprint.pprint(indent=7)
+
+#pp = pprint.pprint(indent=7)
 pprint(response.json())
 
 #location = data['location']['name']
