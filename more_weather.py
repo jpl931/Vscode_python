@@ -1,6 +1,6 @@
 import requests
 import json
-import pprint
+from pprint import pprint
 import csv
 import sys
 
