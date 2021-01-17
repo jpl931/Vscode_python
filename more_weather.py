@@ -22,7 +22,7 @@ data = json.loads(response.text)
 print(data)
 
 #pp = pprint.pprint(indent=7)
-pprint(response.json())
+#pprint(response.json())
 
 #location = data['location']['name']
 
