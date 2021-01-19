@@ -1,4 +1,4 @@
-#from tkinter import *
+from tkinter import Tk, Label
 from tkinter import messagebox
 
 root =Tk()
