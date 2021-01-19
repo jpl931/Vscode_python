@@ -50,4 +50,8 @@ surf = pygame.Surface((50, 50))
 # give the surface color separate from background
 surf.fill((0, 0, 0))
 rect = surf.get_rect()
+
+# draw surf onto the scrren at the cneter
+screen.blit(surf, (SCREEN_WIDTH/2, SCREEN_HEIGHT/2))
+pygame.display.flip()
             
