@@ -40,4 +40,7 @@ while running:
         # did the user click the close button? Then stop the loop.
         elif event.type == QUIT:
             running = False
+
+# fill the screen with white
+screen.fill((255, 255, 255))
             
