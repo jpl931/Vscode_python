@@ -5,7 +5,7 @@ root =Tk()
 root.title("My Message Box Examples")
 root.geometry("300x300")
 
-w = Label(root, text ='TKinter Message Boxes', font = "50")
+w = Label(root, text ='TKinter Message Boxes Just For You', font = "50")
 w.pack()
 
 messagebox.showinfo("Info", "Information")
