@@ -1,6 +1,6 @@
 {
     "python.linting.pylintEnabled": false,
-    "python.pythonPath": "/usr/bin/python3",
+    "python.defaultinterpreterPath": "/usr/bin/python3",
     "python.linting.flake8Enabled": false,
     "python.linting.enabled": true
 }
