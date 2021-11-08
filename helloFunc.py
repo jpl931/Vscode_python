@@ -11,3 +11,5 @@ print (a)
 print (b)
 print (a + b)
 print(a + a + b + b)
+print(a + a + a + a + b + b + b + b) #copilot suggested the reamining entries
+print(a + a + a + a + a + a + a + a + b + b + b + b + b + b + b + b + b)
