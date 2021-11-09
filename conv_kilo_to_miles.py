@@ -17,9 +17,9 @@ print('%0.3f Celsius degrees are equal to %0.3f degrees in Fahrenheit' % (celsiu
 # Program to generate a random number between 1 and 9 (including 1 and 9).
 
 # Importing the random module.
-import random
+#import random
 
-print(random.randint(0, 9))
+#print(random.randint(0, 9))
 
 
 
