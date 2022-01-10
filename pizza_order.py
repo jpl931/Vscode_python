@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 
-thatsAlowPrice = 7.50
+thatsAlowPrice = $7.50
 thatsAhighPrice = 10.50
 
 myMenu = OrderedDict()
