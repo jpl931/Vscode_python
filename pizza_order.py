@@ -18,7 +18,7 @@ for k, v in myMenu.items():
 itemNumber = int(input("Please enter the number of the item you would like to order: "))
 item=list(myMenu.keys())[itemNumber-1]
 
-print("You have ordered:", item)
+print("You have ordered the following:", item)
 print("The price is:  $", myMenu[item])
 print("Thank you for your order!")
  
