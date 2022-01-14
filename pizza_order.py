@@ -19,7 +19,7 @@ itemNumber = int(input("Please enter the number of the item you would like to or
 item=list(myMenu.keys())[itemNumber-1]
 
 print("You have ordered:", item)
-print("The price is:$", myMenu[item])
+print("The price is:  $", myMenu[item])
 print("Thank you for your order!")
  
  # print(myMenu))
