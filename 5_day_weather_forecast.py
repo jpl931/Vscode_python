@@ -3,7 +3,7 @@ import calendar
 
 
 api_key = '518024a766d32327acf4b49f5e47e52f'
-api_call = 'https://api.openweathermap.org/data/2.5/forecast?appid=' + api_key + units=imperial
+api_call = 'https://api.openweathermap.org/data/2.5/forecast?appid=' + api_key 
 
 running = True
 
