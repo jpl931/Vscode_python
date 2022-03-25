@@ -1,3 +1,4 @@
+#Guess the number game
 import random
 #Assign random num between 1-100
 secret_number = random.randint(1,100)
