@@ -1,29 +1,15 @@
 import random
+#Assign random num between 1-100
+secret_number = random.randint(1,100)
+#get user input
+guess = int(input('Guess a number between 1 and 100: '))
 
-secretNumber = random.randint(1, 99)
-
-print('I am thinking of a number between 1 and 99')
-
-#Ask the the player to guess 3 times.
-
-for guessesTaken in range(1, 3):
-    print('Take a guess. ')
-    guess = int(input())
-
-    if guess < secretNumber:
-        print('Your guess is too low. ')
-
-    elif guess > secretNumber:
-
-        print('Your guess is too high.')
-
+#loop until user guess the number
+while guess != secret_number:
+    if guess > secret_number:
+        print('Too high!')
     else:
-
-        break    #This condition is the correct guess!
-
-    if guess == secretNumber:
-        print('Great job! You guessed my number in ' +str(guessesTaken) +' guesses!')
-    else:
-
-        print('Nope! The number I was thinking of was ' + str(secretNumber))
-        
+        print('Too low!')
+    guess = int(input('Guess again: '))
+#This statement will execute after coming out of the loop
+print('You got it!')
