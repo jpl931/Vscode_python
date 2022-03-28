@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-#Test of GitHub Copilpilot
+#Test of GitHub Co-pilot
 
 root = tk.Tk()
 root.withdraw()
