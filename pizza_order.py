@@ -19,14 +19,16 @@ def TakeOrderInput():
     while ordering:
         os.system('cls')
         ShowMenu()
-        pizza = input()
-        if pizza in available_pizzas:
+        available_pizza = input()
+        if available_pizza in available_pizzas:
             ordering = False
         else:
             print("Please enter a valid pizza")
             input("Press enter to continue")    
-    return pizza
-    
+    return available_pizza
+
+
+
 
 
     
