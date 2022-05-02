@@ -1,5 +1,26 @@
 #Python convert kilometers to miles 
 #with user input
+
+import pygame
+import sys
+import math
+
+# Define some colors
+# Draw a circlular object
+# Make the object the color BLUE
+# Set the object's position
+# Make the backgound WHITE
+# Draw the object
+# Draw the background
+pygame.init()
+
+# Set the width and height of the screen [width, height]
+size = (700, 500)
+screen = pygame.display.set_mode(size)
+
+pygame.display.set_caption("Convert Kilometers to Miles")
+
+
 kilometers = float(input("Enter the number of kilometers: "))
 
 #conversion factor
@@ -20,6 +41,9 @@ print('%0.3f Celsius degrees are equal to %0.3f degrees in Fahrenheit' % (celsiu
 import random
 
 print(random.randint(0, 9))
+
+print("The random number is", random.randint(0, 9))
+
 
 
 
