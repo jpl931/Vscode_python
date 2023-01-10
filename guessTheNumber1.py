@@ -12,7 +12,7 @@ tries = 10
 print("===Guess the Number===")
 print(f"You have {tries} tries to guess the number between 1 and 10")
 input("enter your number guess: ")
-if tries == 0
+if tries == 0:
     print("You have ran out of tries")
 else:
     print("You have ran out of tries,sorry")
