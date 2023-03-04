@@ -1,6 +1,10 @@
+import os
+
+api_key = os.environ.get('API_KEY')
+
 import requests
 # weather api
-api_address = 'http://api.openweathermap.org/data/2.5/weather?APPID=518024a766d32327acf4b49f5e47e52f&q='
+api_address = 'http://api.openweathermap.org/data/2.5/weather?APPID=API_KEY&q='
 city = input("City Name: ")
 print()
 
