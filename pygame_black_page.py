@@ -1,7 +1,7 @@
 #Python convert kilometers to miles 
 #with user input
 
-import pygame
+#import pygame
 import sys
 import math
 
