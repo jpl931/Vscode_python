@@ -44,7 +44,7 @@ while running:
 # fill the screen with white
 screen.fill((255, 255, 255))
 
-# create a surface and passs in a tuple containing length and width
+# create a surface and pass in a tuple containing length and width
 surf = pygame.Surface((50, 50))
 
 # give the surface color separate from background
