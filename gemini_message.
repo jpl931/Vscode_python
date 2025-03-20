@@ -1,0 +1,47 @@
+# server.py
+import socket
+import threading
+
+HOST = '0.0.0.0'  # Listen on all available interfaces
+PORT = 12345       # Port number to listen on
+
+def handle_client(conn, addr):
+    """Handles communication with a single client."""
+    print(f"[NEW CONNECTION] {addr} connected.")
+    try:
+        while True:
+            msg = conn.recv(1024).decode('utf-8')
+            if not msg:
+                break
+            print(f"[{addr}] Received: {msg}")
+            # You could add logic here to broadcast the message to other clients
+            # or send a confirmation back to the sender if needed.
+    except ConnectionResetError:
+        print(f"[CONNECTION CLOSED] {addr} disconnected unexpectedly.")
+    except Exception as e:
+        print(f"[ERROR] Error handling client {addr}: {e}")
+    finally:
+        conn.close()
+        print(f"[CONNECTION CLOSED] {addr} disconnected.")
+
+def start_server():
+    """Starts the message server."""
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        server_socket.bind((HOST, PORT))
+        server_socket.listen()
+        print(f"[LISTENING] Server is listening on {HOST}:{PORT}")
+        while True:
+            conn, addr = server_socket.accept()
+            thread = threading.Thread(target=handle_client, args=(conn, addr))
+            thread.start()
+            print(f"[ACTIVE CONNECTIONS] {threading.active_count() - 1}")
+    except socket.error as e:
+        print(f"[ERROR] Socket error: {e}")
+    except KeyboardInterrupt:
+        print("[SHUTTING DOWN] Server is shutting down.")
+    finally:
+        server_socket.close()
+
+if __name__ == "__main__":
+    start_server()
