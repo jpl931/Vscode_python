@@ -1,0 +1,24 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+env/
+venv/
+
+# Logs
+*.log
+
+# VSCode settings
+.vscode/
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
