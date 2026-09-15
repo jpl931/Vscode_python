@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 import creds
-
+#Sample Text: This is a sample text to demonstrate the functionality of the weather forecast app.
 # OpenWeatherMap API endpoints
 FORECAST_API = 'https://api.openweathermap.org/data/2.5/forecast'
 ONECALL_API = 'https://api.openweathermap.org/data/3.0/onecall'
